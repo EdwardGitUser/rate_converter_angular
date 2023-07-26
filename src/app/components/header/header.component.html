@@ -1,0 +1,6 @@
+<div class="header-container">
+  <h1 class="header-title">Currency Exchange Rates </h1>
+  <p class="current-date">{{ currentDate | date: 'dd MMM yyyy, HH:mm:ss'}}</p>
+  <p class="currency-line"> 1 UAH to EUR = {{ exchangeRates.rates['EUR'] }}</p>
+  <p class="currency-line">1 UAH to USD = {{ exchangeRates.rates['USD'] }}</p>
+</div>

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="currency-converter.component.css">
+
+<div class="currency-converter-container">
+  <h1 class="converter-header">Currency Converter</h1>
+  <div>
+    <input type="number" [(ngModel)]="amount" (ngModelChange)="convertCurrency('toSecond')" class="currency-input" />
+    <select [(ngModel)]="selectedCurrency1" (ngModelChange)="convertCurrency('toSecond')" class="currency-select">
+      <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+    </select>
+  </div>
+  <div>
+    <input type="number" [(ngModel)]="convertedAmount" (ngModelChange)="convertCurrency('toFirst')"
+      class="currency-input" />
+    <select [(ngModel)]="selectedCurrency2" (ngModelChange)="convertCurrency('toFirst')" class="currency-select">
+      <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+    </select>
+  </div>
+</div>

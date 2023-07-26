@@ -1,0 +1,20 @@
+.header-container {
+  background-color: #121213;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.current-date {
+  padding: 10px;
+  font-style: italic;
+}
+
+.header-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.currency-line {
+  font-size: 18px;
+  margin: 5px;
+}

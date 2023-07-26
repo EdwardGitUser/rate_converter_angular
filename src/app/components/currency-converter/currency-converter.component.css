@@ -1,0 +1,35 @@
+.currency-converter-container {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  width: 50%;
+  border-radius: 8px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.currency-input,
+.currency-select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.currency-input {
+  width: 150px;
+}
+
+.currency-select {
+  width: 100px;
+}
+
+.converter-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.currency-line {
+  font-size: 18px;
+  margin: 5px;
+}
