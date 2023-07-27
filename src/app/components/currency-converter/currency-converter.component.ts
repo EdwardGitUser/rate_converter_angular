@@ -38,10 +38,10 @@ export class CurrencyConverterComponent implements OnInit {
     if (rate1 && rate2) {
       if (direction === 'toSecond') {
         this.convertedAmount = (this.amount * rate2) / rate1; // super-formula 1
-        this.convertedAmount = Number(this.convertedAmount.toFixed(2)); // Limit to 3 decimal
+        this.convertedAmount = Number(this.convertedAmount.toFixed(2)); // Limit to 2 decimal
       } else if (direction === 'toFirst') {
         this.amount = (this.convertedAmount * rate1) / rate2; //super-formula 2
-        this.amount = Number(this.amount.toFixed(2)); // Limit to 3 decimal
+        this.amount = Number(this.amount.toFixed(2)); // Limit to 2 decimal
       }
     }
   }
