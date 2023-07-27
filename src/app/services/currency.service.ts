@@ -12,8 +12,6 @@ export class CurrencyService {
   constructor(private http: HttpClient) {}
 
   getExchangeRates(baseCurrency: string): Observable<ExchangeRates> {
-    const dynamicUrl = `${this.apiUrl}${baseCurrency}`;
-
-    return this.http.get<ExchangeRates>(dynamicUrl);
+    return this.http.get<ExchangeRates>(` ${this.apiUrl}${baseCurrency} `);
   }
 }
